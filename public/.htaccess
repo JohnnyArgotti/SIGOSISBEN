@@ -1,0 +1,47 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    # Las carpetas también se envían al front controller (no se excluyen con
+    # !-d como en el .htaccess original de Laravel). Sin esto, Apache responde
+    # 403 a /build o /build/assets por el Options -Indexes, y ese 403 confirma
+    # que la carpeta existe; enviándolas aquí responden 404 igual que cualquier
+    # otra ruta inexistente. Ninguna carpeta de public/ se sirve por sí misma:
+    # solo se piden archivos con nombre completo.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Cabeceras de seguridad de los archivos que entrega Apache sin pasar por PHP
+# (el build de Vite, los iconos, robots.txt). Las respuestas de la aplicación
+# las pone el middleware App\Http\Middleware\SecurityHeaders; ambas listas
+# deben mantenerse alineadas. El filtro por extensión evita que este bloque
+# toque las respuestas de index.php, que ya traen las suyas.
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|mjs|css|map|json|xml|txt|svg|png|jpe?g|gif|webp|ico|woff2?|ttf|eot)$">
+        Header set X-Content-Type-Options "nosniff"
+        Header set X-Frame-Options "SAMEORIGIN"
+        Header set Referrer-Policy "strict-origin-when-cross-origin"
+        Header set Cross-Origin-Opener-Policy "same-origin"
+        Header set Cross-Origin-Resource-Policy "same-origin"
+        Header set Cross-Origin-Embedder-Policy "require-corp"
+        Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), usb=()"
+    </FilesMatch>
+</IfModule>

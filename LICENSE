@@ -1,0 +1,126 @@
+SIGO-SISBÉN
+Sistema de Información y Gestión Operativa del Sisbén
+
+LICENCIA DE SOFTWARE PROPIETARIO
+Todos los derechos reservados.
+
+================================================================================
+1. IDENTIFICACIÓN DE LA OBRA
+================================================================================
+
+Denominación:   SIGO-Sisbén — Sistema de Información y Gestión Operativa del
+                Sisbén.
+Naturaleza:     Soporte lógico (software), protegido como obra literaria en los
+                términos del artículo 1 del Decreto 1360 de 1989 y del artículo
+                4 de la Decisión Andina 351 de 1993.
+Año de creación: 2025-2026
+
+================================================================================
+2. TITULARIDAD DE LOS DERECHOS PATRIMONIALES
+================================================================================
+
+Los derechos patrimoniales de autor sobre SIGO-Sisbén corresponden de manera
+exclusiva a:
+
+        ALCALDÍA DE SANTIAGO DE CALI
+        Municipio de Santiago de Cali — Valle del Cauca, Colombia
+
+en virtud del contrato [NÚMERO DE CONTRATO] suscrito el [FECHA], conforme a lo
+previsto en el artículo 20 de la Ley 23 de 1982, modificado por el artículo 28
+de la Ley 1915 de 2018, y en el artículo 183 de la misma ley, modificado por el
+artículo 30 de la Ley 1915 de 2018, que exige que los actos de transferencia de
+derechos patrimoniales consten por escrito como condición de validez.
+
+En consecuencia, la Alcaldía de Santiago de Cali es la única facultada para
+usar, reproducir, modificar, adaptar, traducir, distribuir, comunicar
+públicamente y disponer de la obra por cualquier medio y en cualquier soporte,
+sin limitación de tiempo ni de territorio.
+
+================================================================================
+3. TITULARIDAD DE LOS DERECHOS MORALES
+================================================================================
+
+De conformidad con el artículo 30 de la Ley 23 de 1982 y el artículo 11 de la
+Decisión Andina 351 de 1993, los derechos morales de autor son INALIENABLES,
+IRRENUNCIABLES, IMPRESCRIPTIBLES E INEMBARGABLES, y permanecen radicados de
+forma permanente en cabeza de sus autores personas naturales:
+
+        Víctor Quiceno
+        Junior Sinisterra
+        Euvar Diuza
+
+Estos derechos comprenden, entre otros, el de reivindicar en todo tiempo la
+paternidad de la obra y el de oponerse a toda deformación, mutilación o
+modificación que atente contra el decoro de la obra o la reputación de sus
+autores.
+
+La transferencia de derechos patrimoniales a la que se refiere la sección 2 no
+afecta, ni podría afectar, los derechos morales aquí reconocidos.
+
+Toda copia, publicación, presentación o documentación derivada de SIGO-Sisbén
+deberá conservar la mención de autoría establecida en esta sección.
+
+================================================================================
+4. RESERVA DE DERECHOS FRENTE A TERCEROS
+================================================================================
+
+Este software NO es software libre ni de código abierto. No se concede a
+ninguna persona natural o jurídica distinta de la Alcaldía de Santiago de Cali
+licencia, autorización ni derecho alguno para usar, copiar, modificar,
+fusionar, publicar, distribuir, sublicenciar, vender, descompilar o realizar
+ingeniería inversa sobre la obra o cualquier parte de ella.
+
+Queda prohibida la remoción o alteración de los avisos de titularidad, autoría
+o licencia contenidos en este archivo o en el código fuente.
+
+El uso no autorizado de esta obra da lugar a las acciones civiles y penales
+previstas en la Ley 23 de 1982, la Ley 44 de 1993 y los artículos 270 a 272 del
+Código Penal colombiano.
+
+================================================================================
+5. COMPONENTES DE TERCEROS
+================================================================================
+
+SIGO-Sisbén incorpora componentes de software libre y de código abierto
+desarrollados por terceros, los cuales NO son objeto de esta licencia y
+conservan íntegramente las licencias otorgadas por sus respectivos titulares.
+
+El inventario completo de dichos componentes, con su versión, su licencia y su
+aviso de derecho de autor, así como el texto íntegro de cada licencia, consta
+en el archivo:
+
+        AVISOS-DE-TERCEROS.md
+
+Ese archivo forma parte integral de la presente licencia y debe acompañar toda
+copia o entrega del sistema.
+
+Ninguno de los componentes de terceros incorporados impone obligación de
+liberar el código fuente de SIGO-Sisbén, ni exige contraprestación económica,
+ni restringe su uso por parte de una entidad pública.
+
+================================================================================
+6. AUSENCIA DE GARANTÍAS
+================================================================================
+
+Sin perjuicio de las obligaciones de garantía, soporte y calidad que se hayan
+pactado expresamente en el contrato mencionado en la sección 2, y en la medida
+en que lo permita la legislación aplicable, el software se entrega "TAL COMO
+ESTÁ", sin garantías implícitas de comerciabilidad o idoneidad para un
+propósito particular más allá de las especificaciones contractualmente
+acordadas.
+
+================================================================================
+7. REGISTRO
+================================================================================
+
+Se recomienda inscribir esta obra en el Registro Nacional del Derecho de Autor
+de la Dirección Nacional de Derecho de Autor (DNDA), conforme al Decreto 1360
+de 1989 y a la Ley 44 de 1993. Dicha inscripción tiene carácter declarativo y
+no constitutivo de derechos, pero otorga publicidad y oponibilidad frente a
+terceros y constituye medio de prueba sobre la fecha de creación y la
+titularidad.
+
+================================================================================
+
+Copyright (c) 2025-2026 Alcaldía de Santiago de Cali. Todos los derechos
+reservados.
